@@ -1,0 +1,51 @@
+[tool.flakehell]
+base = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/flakehell.toml"
+
+[tool.flakehell.plugins]
+flake8-docstrings = [
+    "+*",
+    # Missing docstring in public module.
+    "-D100",
+    # Missing docstring in public package.
+    "-D104",
+    # First line should be in imperative mood.
+    "-D401",
+]
+wemake-python-styleguide = [
+    "+*",
+    # Forbids to have names with underscored numbers pattern.
+    "-WPS114",
+    # Forbids to use anything but snake_case for naming class attributes.
+    "-WPS115",
+    # Forbids to use more than one consecutive underscore in variable names.
+    "-WPS116",
+]
+pycodestyle = [
+    "+*",
+    # Line break after binary operator.
+    "-W504",
+]
+flake8-rst-docstrings = [
+    "+*",
+    # Unknown directive type "XXX".
+    "-RST303",
+    # Unknown interpreted text role "XXX".
+    "-RST304",
+]
+darglint = [
+    "+*",
+    # The docstring parameter type doesn't match function.
+    "-DAR103",
+    # The docstring parameter type doesn't match function.
+    "-DAR203",
+]
+
+[tool.flakehell.exceptions."tests/"]
+wemake-python-styleguide = [
+    # Forbids to use magic numbers in your code.
+    "-WPS432",
+]
+flake8-bandit = [
+    # assert used
+    "-S101",
+]
