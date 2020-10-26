@@ -41,11 +41,23 @@ darglint = [
 ]
 
 [tool.flakehell.exceptions."tests/"]
+flake8-docstrings = [
+    # Missing docstring in public function.
+    "-D103"
+]
+
 wemake-python-styleguide = [
     # Forbids to use magic numbers in your code.
     "-WPS432",
+    # Found compare with falsy constant.
+    "-WPS520",
+    # Found outer scope names shadowing: {0}.
+    "-WPS442",
+    # Found string constant over-use.
+    "-WPS226",
 ]
+
 flake8-bandit = [
-    # assert used
+    # Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
     "-S101",
 ]
