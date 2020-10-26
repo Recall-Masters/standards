@@ -31,6 +31,7 @@ pycodestyle = [
     # Line break after binary operator.
     "-W504",
 ]
+
 flake8-rst-docstrings = [
     "+*",
     # Unknown directive type "XXX".
@@ -38,6 +39,7 @@ flake8-rst-docstrings = [
     # Unknown interpreted text role "XXX".
     "-RST304",
 ]
+
 darglint = [
     "+*",
     # The docstring parameter type doesn't match function.
@@ -45,6 +47,14 @@ darglint = [
     # The docstring parameter type doesn't match function.
     "-DAR203",
 ]
+
+
+flake8-quotes = [
+    # Remove bad quotes from multiline string
+    # We need " quotes in ''' multiline strings to express raw SQL.
+    "-Q001",
+]
+
 
 [tool.flakehell.exceptions."tests/"]
 flake8-docstrings = [
