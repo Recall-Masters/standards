@@ -13,12 +13,18 @@ flake8-docstrings = [
 ]
 wemake-python-styleguide = [
     "+*",
+    
     # Forbids to have names with underscored numbers pattern.
     "-WPS114",
+    
     # Forbids to use anything but snake_case for naming class attributes.
     "-WPS115",
+    
     # Forbids to use more than one consecutive underscore in variable names.
     "-WPS116",
+
+    # Found `f` string
+    "-WPS305",
 ]
 pycodestyle = [
     "+*",
