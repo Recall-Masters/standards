@@ -94,7 +94,7 @@ flake8-bandit = [
 ]
 
 
-[tool.flakehell.exceptions."__init__.py"]
+[tool.flakehell.exceptions."**/__init__.py"]
 pyflakes = [
     # %s imported but unused
     # In __init__.py files, we often have to import things just to make them easily importable from other packages.
