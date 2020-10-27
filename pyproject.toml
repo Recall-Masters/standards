@@ -25,7 +25,11 @@ wemake-python-styleguide = [
 
     # Found `f` string
     "-WPS305",
+
+    # Found implicit string concatenation
+    "-WPS326",
 ]
+
 pycodestyle = [
     "+*",
     # Line break after binary operator.
