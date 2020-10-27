@@ -8,6 +8,8 @@ flake8-docstrings = [
     "-D100",
     # Missing docstring in public package.
     "-D104",
+    # Missing docstring in __init__
+    "-D107",
     # First line should be in imperative mood.
     "-D401",
 ]
@@ -26,8 +28,17 @@ wemake-python-styleguide = [
     # Found `f` string
     "-WPS305",
 
+    # Found class without a base class
+    "-WPS306",
+
+    # Found `%` string formatting
+    "-WPS323",
+
     # Found implicit string concatenation
     "-WPS326",
+
+    # Found walrus operator
+    "-WPS332",
 ]
 
 pycodestyle = [
