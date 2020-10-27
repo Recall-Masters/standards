@@ -81,3 +81,12 @@ flake8-bandit = [
     # Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
     "-S101",
 ]
+
+
+[tool.flakehell.exceptions."__init__.py"]
+pyflakes = [
+    # %s imported but unused
+    # In __init__.py files, we often have to import things just to make them easily importable from other packages.
+    "-F401",
+]
+
