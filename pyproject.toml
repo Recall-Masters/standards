@@ -74,7 +74,9 @@ flake8-quotes = [
 [tool.flakehell.exceptions."tests/"]
 flake8-docstrings = [
     # Missing docstring in public function.
-    "-D103"
+    "-D103",
+    # Missing docstring in public method.
+    "-D102",
 ]
 
 wemake-python-styleguide = [
