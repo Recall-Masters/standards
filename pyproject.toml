@@ -88,6 +88,8 @@ wemake-python-styleguide = [
     "-WPS442",
     # Found string constant over-use.
     "-WPS226",
+    # Found overused expression: 
+    "-WPS204",
 ]
 
 flake8-bandit = [
