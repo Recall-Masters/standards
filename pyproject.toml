@@ -70,6 +70,11 @@ flake8-quotes = [
     "-Q001",
 ]
 
+flake8-coding = [
+    # Coding magic comment not found
+    "-C101",
+]
+
 
 [tool.flakehell.exceptions."tests/"]
 flake8-docstrings = [
