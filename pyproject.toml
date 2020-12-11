@@ -39,6 +39,9 @@ wemake-python-styleguide = [
 
     # Found walrus operator
     "-WPS332",
+    
+    # Found multiline conditions
+    "-WPS337",
 ]
 
 pycodestyle = [
