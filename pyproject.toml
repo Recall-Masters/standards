@@ -115,3 +115,9 @@ pyflakes = [
     "-F401",
 ]
 
+[tool.flakehell.exceptions."**/settings.py"]
+wemake-python-styleguide = [
+    # Found mutable module constant
+    "-WPS407",
+]
+
