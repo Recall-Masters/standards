@@ -1,5 +1,7 @@
 [tool.flakehell]
 base = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/flakehell.toml"
+
+[tool.flake8]
 forbidden_inline_ignore = [
     "F401",
     "E501",
