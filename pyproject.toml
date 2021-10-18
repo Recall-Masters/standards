@@ -1,5 +1,9 @@
 [tool.flakehell]
 base = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/flakehell.toml"
+forbidden_inline_ignore = [
+    "F401",
+    "E501",
+]
 
 [tool.flakehell.plugins]
 flake8-docstrings = [
