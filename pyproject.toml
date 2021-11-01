@@ -51,11 +51,7 @@ pycodestyle = [
 ]
 
 flake8-rst-docstrings = [
-    "+*",
-    # Unknown directive type "XXX".
-    "-RST303",
-    # Unknown interpreted text role "XXX".
-    "-RST304",
+    "-*",
 ]
 
 darglint = [
